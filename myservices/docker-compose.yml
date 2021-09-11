@@ -1,0 +1,22 @@
+services:
+  web_browser:
+    image: httpd:alpine
+    ports: 
+      - "9090:80"
+  ecomm:
+    image: nareshreddy1238/ecomm
+    ports:
+      - "8080:80"
+  napp:
+    image: nareshreddy1238/nodeapp
+    ports:
+      - "8090:8080"
+  web_browser2:
+    image: nginx
+    ports:
+      - "9092:80"
+  food:
+    image: nareshreddy1238/food
+    ports:
+      - "8081:80"
+
